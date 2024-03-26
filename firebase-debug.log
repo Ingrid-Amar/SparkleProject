@@ -1,0 +1,33 @@
+[debug] [2024-03-26T03:40:21.098Z] ----------------------------------------------------------------------
+[debug] [2024-03-26T03:40:21.102Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hanna\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2024-03-26T03:40:21.103Z] CLI Version:   13.1.0
+[debug] [2024-03-26T03:40:21.103Z] Platform:      win32
+[debug] [2024-03-26T03:40:21.103Z] Node Version:  v21.6.2
+[debug] [2024-03-26T03:40:21.104Z] Time:          Mon Mar 25 2024 21:40:21 GMT-0600 (Mountain Daylight Time)
+[debug] [2024-03-26T03:40:21.104Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-03-26T03:40:21.205Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-26T03:40:21.205Z] > authorizing via signed-in user (hannahbailey042401@gmail.com)
+[debug] [2024-03-26T03:40:21.205Z] [iam] checking project blue-potatoes for permissions ["firebase.projects.get"]
+[debug] [2024-03-26T03:40:21.208Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/blue-potatoes:testIamPermissions [none]
+[debug] [2024-03-26T03:40:21.208Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/blue-potatoes:testIamPermissions x-goog-quota-user=projects/blue-potatoes
+[debug] [2024-03-26T03:40:21.208Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/blue-potatoes:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-03-26T03:40:21.683Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/blue-potatoes:testIamPermissions 200
+[debug] [2024-03-26T03:40:21.684Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/blue-potatoes:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-03-26T03:40:21.686Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/blue-potatoes [none]
+[debug] [2024-03-26T03:40:22.078Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/blue-potatoes 200
+[debug] [2024-03-26T03:40:22.078Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/blue-potatoes {"projectId":"blue-potatoes","projectNumber":"567474699175","displayName":"Blue Potatoes","name":"projects/blue-potatoes","resources":{"hostingSite":"blue-potatoes"},"state":"ACTIVE","etag":"1_ab859ece-6407-4390-9175-ae948905698a"}
+[info] 
+[info] === Serving from 'C:\Users\hanna\csci322\ProjectLab\SparkleProject'...
+[info] 
+[debug] [2024-03-26T03:40:22.089Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/blue-potatoes/sites 
+[debug] [2024-03-26T03:40:22.702Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/blue-potatoes/sites 200
+[debug] [2024-03-26T03:40:22.702Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/blue-potatoes/sites {"sites":[{"name":"projects/blue-potatoes/sites/blue-potatoes","defaultUrl":"https://blue-potatoes.web.app","appId":"1:567474699175:web:12319aecca0b3c3e851482","type":"DEFAULT_SITE"}]}
+[debug] [2024-03-26T03:40:22.703Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/blue-potatoes/webApps/1:567474699175:web:12319aecca0b3c3e851482/config [none]
+[debug] [2024-03-26T03:40:22.999Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/blue-potatoes/webApps/1:567474699175:web:12319aecca0b3c3e851482/config 200
+[debug] [2024-03-26T03:40:22.999Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/blue-potatoes/webApps/1:567474699175:web:12319aecca0b3c3e851482/config {"projectId":"blue-potatoes","appId":"1:567474699175:web:12319aecca0b3c3e851482","storageBucket":"blue-potatoes.appspot.com","apiKey":"AIzaSyCGBGSNQIqAHZb8-c_ewulCkOeFu4Kn3nY","authDomain":"blue-potatoes.firebaseapp.com","messagingSenderId":"567474699175"}
+[debug] [2024-03-26T03:40:23.047Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/blue-potatoes [none]
+[debug] [2024-03-26T03:40:23.409Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/blue-potatoes 200
+[debug] [2024-03-26T03:40:23.410Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/blue-potatoes {"projectId":"blue-potatoes","projectNumber":"567474699175","displayName":"Blue Potatoes","name":"projects/blue-potatoes","resources":{"hostingSite":"blue-potatoes"},"state":"ACTIVE","etag":"1_ab859ece-6407-4390-9175-ae948905698a"}
+[info] i  hosting[blue-potatoes]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting[blue-potatoes]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
